@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RateWithReni</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="scene">
+        <!--The main container-->
+    <div class="container">
+        
+       
+
+        <!--The converter content section-->
+        <div class="converter_content">
+            <!--the header-->
+            <div class="header">
+                <h1>RateWithReni</h1>
+            <div class="live_indicator">
+                    <span class="live_dot"></span>
+                    <span>Live</span>
+            </div> 
+            </div>
+            <!--From currency section-->
+            <div class="currency_section">
+                <label class="currency_label">United States Dollars</label>
+                <div class="currency_selector">
+                    <span class="currency_icon_usd">$</span>
+                    <select id="fromCurrency">
+                        <option value="USD" selected>USD</option>
+                        <option value="EUR">EUR</option>
+                        <option value="GBP">GBP</option>
+                        <option value="JPY">JPY</option>
+                        <option value="AUD">AUD</option>
+                        <option value="CAD">CAD</option>
+                        <option value="CHF">CHF</option>
+                        <option value="CNY">CNY</option>
+                        <option value="INR">INR</option>
+                        <option value="NGN">NGN</option>
+                    </select>
+                    <span>▼</span>
+                    </div>
+                     <div class="input_group">
+                        <label class="input_label">Your payment</label>
+                        <div class="input_wrapper">
+                            <input type="text" id="fromAmount" class="amount_input" value="100" placeholder="0">
+                        </div>
+                        <div class="rate_change">
+                            <span class="change_badge down">
+                                <span class="arrow">↓</span> 0.17%
+                            </span>
+                            <span class="change_value negative">-$280.50 Today</span>
+                        </div>
+                </div>
+                
+                
+                <!--the swap button-->
+                <div class="divider">
+                    <div class="line"></div>
+                    <button class="swap-btn" id="swapBtn">⇄</button>
+                    <div class="line"></div>
+                </div>
+                
+                <!--To currency section-->
+                <label class="currency_label">Euro</label>
+                 <div class="currency_selector">
+                    <span class="currency_icon_eur">€</span>
+                    <select id="toCurrency">
+                        <option value="USD">USD</option>
+                        <option value="EUR" selected>EUR</option>
+                        <option value="GBP">GBP</option>
+                        <option value="JPY">JPY</option>
+                        <option value="AUD">AUD</option>
+                        <option value="CAD">CAD</option>
+                        <option value="CHF">CHF</option>
+                        <option value="CNY">CNY</option>
+                        <option value="INR">INR</option>
+                        <option value="NGN">NGN</option>
+                    </select>
+                    <span>▼</span>
+                    </div>
+                    <div class="input_group">
+                        <label class="input_label">You receive</label>
+                        <div class="input_wrapper">
+                            <input type="text" id="toAmount" class="amount_input" value="84.26" placeholder="0" readonly>
+                        </div>
+                        <div class="rate_change">
+                            <span class="change_badge up">
+                                <span class="arrow">↑</span> 0.17%
+                            </span>
+                            <span class="change_value positive">+$257.60 Today</span>
+                        </div>
+                    </div>
+                </div>
+             <!--the exchange rate section-->
+        <footer>
+            <div class="exchange_rate">
+                <div class="rate_item">
+                    <div class="rate_pair">JPY / EUR</div>
+                    <div class="rate_value">0.0059</div>
+                    <div class="rate_change small">
+                        <span class="badge_small down">↓ 0.0044%</span>
+                        <span class="rate_label">JPY</span>
+                    </div>
+                <div class="rate_item">
+                    <div class="rate_pair">GBP / EUR</div>
+                    <div class="rate_value">1.1745</div>
+                    <div class="rate_change small">
+                        <span class="badge_small down">↓ 0.17%</span>
+                        <span class="rate_label">GBP</span>
+                    </div>
+                <div class="rate_item">
+                    <div class="rate_pair">AUD / EUR</div>
+                    <div class="rate_value">0.6125</div>
+                    <div class="rate_change small">
+                        <span class="badge_small up">↑ 0.6125%</span>
+                        <span class="rate_label">AUD</span>
+                    </div>
+                </div>
+                
+            </div>
+            <!--the connect wallet button-->
+           
+            
+        </footer>   
+         <div class="connect_btn">
+                <button class="Connect_Wallet_btn">Connect Wallet</button>
+            </div>         
+                
+            </div>
+
+    
+    <script src="script.js"></script>
+</body>
+</html>
